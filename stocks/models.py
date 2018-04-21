@@ -14,4 +14,4 @@ class Stocks(models.Model):
     expiry_date=models.DateField
 
     def __unicode__(self):
-		return "%s" % (self.product_name)
+        return "%s" % (self.product_name)

@@ -112,6 +112,7 @@
       <div id="comments">
         <h2>Add Stock Details</h2>
         <form method="post" action="">
+            {% csrf_token %}
 <br><br>
 ID <input type="text" name="ID" value="" placeholder="Enter Id"/><br><br>
 Product Name <input type="text" name="product_name" value="" placeholder="Enter Product Name"/><br><br>

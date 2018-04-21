@@ -14,4 +14,4 @@ class Customer(models.Model):
     address=models.CharField(max_length=40)
 
     def __unicode__(self):
-		return "%s" % (self.name)
+        return "%s" % (self.name)
