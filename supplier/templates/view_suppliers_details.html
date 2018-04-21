@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Inventory | View | Supplier Details</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{%static 'css/layout.css' %}" rel="stylesheet">
+<link href="{%static 'css/fontawesome-4.3.0.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-image:url('../images/demo/backgrounds/pw.png');">
+  <div class="overlay"> 
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row0">
+      <div id="topbar" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div class="fl_left">
+          <ul class="nospace inline pushright">
+            <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+            <li><i class="fa fa-envelope-o"></i> invento@123.com</li>
+          </ul>
+        </div>
+        <div class="fl_right">
+          <ul class="faico clear">
+            <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <!-- ################################################################################################ -->
+      </div>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row1">
+      <header id="header" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div id="logo" class="fl_left">
+          <h1><a href="\dashboard\">Invento</a></h1>
+        </div>
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li class="active"><a href="\dashboard\">Home</a></li>
+            <li><a class="drop" href="#">View Category</a>
+              <ul>
+                <li><a href="#">Customer</a>
+                <ul>
+                  <li><a href="\add_customer_details\">Add Customer</a></li>
+                  <li><a href="\view_customers_details\">View Customer</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Suppliers</a>
+                <ul>
+                  <li><a href="\add_supplier_details\">Add Suppliers</a></li>
+                  <li><a href="\view_suppliers_details\">View Suppliers Details</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Stock</a>
+                <ul>
+                  <li><a href="\add_stock_details\">Add Stock Details</a></li>
+                  <li><a href="\view_stock_details\">View Stock Details</a></li>
+                  <li><a href="\purchase_stock\">Purchase Stock</a></li>
+                  <li><a href="\view_purchase\">View Purchase</a></li>
+                  <li><a href="\view_stock_availibility\">View Stock Availibility</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Sales</a>
+                <ul>
+                  <li><a href="\add_sales\">Sales</a></li>
+                  <li><a href="\view_sales\">View Sales</a></li>
+              </ul>
+            </li>
+          </ul>
+      </li>
+            <li class="active"><a href="\payment\">Payment</a></li>
+            <li class="drop"><a href="#">Report</a>
+            <ul>
+                  <li><a href="\sales_product\">Sales and Product</a></li>
+                  <li><a href="\profit_report\">Profit Report</a></li>
+              </ul>
+              <li class="active"><a href="\">Log Out</a></li>
+
+        </nav>
+        <!-- ################################################################################################ -->
+      </header>
+    </div>
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+
+<div class="panel-heading" align="center">
+    <h1 class="panel-title"> View Suppliers Details</h1>
+    </div>
+
+    <div class="scrollable">
+        <table>
+           <thead>
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Contact</th>
+              <th>View/Edit</th>
+              <th>Delete</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Value 1</td>
+              <td>Value 2</td>
+              <td>Value 3</td>
+              <td>Value 2</td>
+              <td>Value 3</td>
+            </tr>
+            <tr>
+              <td>Value 4</td>
+              <td>Value 5</td>
+              <td>Value 6</td>
+              <td>Value 2</td>
+              <td>Value 3</td>
+          </tr>
+
+          <tr>
+              <td>Value 7</td>
+              <td>Value 8</td>
+              <td>Value 9</td>
+              <td>Value 2</td>
+              <td>Value 3</td>
+            </tr>
+            <tr>
+              
+              <td>Value 10</td>
+              <td>Value 11</td>
+              <td>Value 12</td>
+              <td>Value 2</td>
+              <td>Value 3</td>
+            </tr>
+            <tr>
+              
+              <td>Value 13</td>
+              <td>Value 14</td>
+              <td>Value 15</td>
+              <td>Value 2</td>
+              <td>Value 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="center">Copyright &copy; 2018 - All Rights Reserved </p>
+   
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.backtotop.js' %}"></script>
+<script src="{% static 'js/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>

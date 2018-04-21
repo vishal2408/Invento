@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Inventory | Sales</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{%static 'css/layout.css' %}" rel="stylesheet">
+<link href="{%static 'css/fontawesome-4.3.0.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-image:url('../images/demo/backgrounds/pw.png');">
+  <div class="overlay"> 
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row0">
+      <div id="topbar" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div class="fl_left">
+          <ul class="nospace inline pushright">
+            <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+            <li><i class="fa fa-envelope-o"></i> invento@123.com</li>
+          </ul>
+        </div>
+        <div class="fl_right">
+          <ul class="faico clear">
+            <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <!-- ################################################################################################ -->
+      </div>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row1">
+      <header id="header" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div id="logo" class="fl_left">
+          <h1><a href="\dashboard\">Invento</a></h1>
+        </div>
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li class="active"><a href="\dashboard\">Home</a></li>
+            <li><a class="drop" href="#">View Category</a>
+              <ul>
+                <li><a href="#">Customer</a>
+                <ul>
+                  <li><a href="\add_customer_details\">Add Customer</a></li>
+                  <li><a href="\view_customers_details\">View Customer</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Suppliers</a>
+                <ul>
+                  <li><a href="\add_supplier_details\">Add Suppliers</a></li>
+                  <li><a href="\view_suppliers_details\">View Suppliers Details</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Stock</a>
+                <ul>
+                  <li><a href="\add_stock_details\">Add Stock Details</a></li>
+                  <li><a href="\view_stock_details\">View Stock Details</a></li>
+                  <li><a href="\purchase_stock\">Purchase Stock</a></li>
+                  <li><a href="\view_purchase\">View Purchase</a></li>
+                  <li><a href="\view_stock_availibility\">View Stock Availibility</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Sales</a>
+                <ul>
+                  <li><a href="\add_sales\">Sales</a></li>
+                  <li><a href="\view_sales\">View Sales</a></li>
+              </ul>
+            </li>
+          </ul>
+      </li>
+            <li class="active"><a href="\payment\">Payment</a></li>
+            <li class="drop"><a href="#">Report</a>
+            <ul>
+                  <li><a href="\sales_product\">Sales and Product</a></li>
+                  <li><a href="\profit_report\">Profit Report</a></li>
+              </ul>
+              <li class="active"><a href="\">Log Out</a></li>
+
+        </nav>
+        <!-- ################################################################################################ -->
+      </header>
+    </div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<div class="wrapper row3">
+  <main class="container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+
+      <div id="comments">
+        <h2>Add New Sales Entry</h2>
+        <form method="post" action="">
+<br><br>
+ID <input type="text" name="ID" value="" placeholder="Enter Id"/>  <br>
+Date <input type="Date" name="Date" value="" placeholder="Enter Date"/><br>
+Bill Number <input type="Number" name="Bill No." value="" placeholder="Enter Bill no."/> <br><br>
+<br><br>
+Customer <input type="Text" name="Customer_name" value="" placeholder="Enter Customer Name"/><br>
+Address <input type="text" name="Address" value="" placeholder="Enter Customers Address"/><br>
+Contact <input type="text" name="Contact" value="" placeholder="Enter Contact Number"/><BR><BR><hr><br>
+<br><br>
+Product Name <input type="text" name="Product_name" value="" placeholder="Enter Product Name"/><br>
+Quantity <input type="number" name="Quantity" value="" min="1" placeholder="Enter Qty"/><br>
+Rate <input type="number" name="Rate" value="" placeholder=""/><br>
+Avail Quantity <input type="number" name="Avail_Qty"  value="" placeholder=""/><br>
+Total <input type="number" name="Total" value="" placeholder=""/><br><br>
+<br><br><br>
+Payment <input type="number" name="Payment" value="" placeholder="Payable Amount"/><br>
+Description <input type="text" value="" placeholder="Enter Description"/><br>
+Sub Total <input type="text" name="Sub_total" value="" placeholder=""/> <br><br>
+<br><br><br>
+Balance <input type="text" name="balance" value="" placeholder=""/><br>
+Mode <select name="Mode"> <option value="Cash">Cash</option> <option value="Cheque">Cheque</option> <option value="Other">Other</option> </select><br>
+Due Date <input type="data" name="Due_date" value=""/> <br> <br>
+<center><input type="reset" value="Reset">
+  <input type="submit" value="Save"> </Center>
+
+</form>
+      </div>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="center">Copyright &copy; 2018 - All Rights Reserved </p>
+   
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.backtotop.js' %}"></script>
+<script src="{% static 'js/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Login Form</title>
+</head>
+<style>
+
+#wrapper {
+    background-color:#dfe9ec;
+    width: 320px;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -200px;
+    border-radius: 15px;
+}
+.container {
+    padding: 40px  30px 30px 30px;
+
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    
+    background-color:#3f9db8 ;
+    color: white;
+    padding: 1px 1px;
+    margin: 5px 155px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 5px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+</style>
+
+<body background="{%static 'images/pw.png' %}">
+<div id="wrapper">
+        <form method="post" action=".">
+          <div class="container"> 
+
+          <h1>Admin Login</h1>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <!-- <label for="username"><b>Username</b></label>
+            <input name="username"  type="text" value="" minlength="5" maxlength="10" placeholder="Enter User Name"  />
+            <label for="password"><b>Password</b></label>
+            <input name="password"  type="password" value="" minlength="5" maxlength="10" placeholder="Enter Password"/> -->
+          <button type="submit"><h3>Login</h3></button>
+             
+          </div>      
+        </form>
+</div> 
+</body>
+</html>

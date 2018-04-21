@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+   <title>Inventory | Welcome Page</title>
+<style>
+button {
+    
+    background-color:#3f9db8 ;
+    color: white;
+    padding: 1px 1px;
+    margin: 5px 155px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    border-radius: 5px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+ </style>
+
+
+<body background="{%static 'images/pw.png' %}"><br><br><br><br><br><br><br><br><center>
+    	
+        <div class="container">
+    	<img src="{%static 'images/invento.png' %}" width="400" height="100" >
+       <font color="white"; size="5" face="Bauhaus 93"> <h1>Welcome To Inventory Management System</h1></font>
+        <ul>
+        	<font color="grey"; size="5"><li>Tracking Inventory levels, Orders, Sales and Deliveries.</li></font>
+        </ul><br> <br>
+           <a href="\login\"> <button type=submit><h2>Get Started</h2></button></a>
+    </div>
+
+</center>
+</body>
+</html>
