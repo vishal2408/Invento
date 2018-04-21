@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
-class stocks(models.Model):
+class Stocks(models.Model):
     emailID=models.EmailField()
     product_name=models.CharField(max_length=30)
     category=models.CharField(max_length=30)
@@ -12,3 +12,6 @@ class stocks(models.Model):
     selling_rate=models.DecimalField(decimal_places=4,max_digits=10)
     suppiler_name=models.CharField(max_length=20)
     expiry_date=models.DateField
+
+    def __unicode__(self):
+		return "%s" % (self.product_name)

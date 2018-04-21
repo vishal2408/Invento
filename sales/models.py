@@ -5,7 +5,7 @@ from django.core.validators import RegexValidator
 from django.db import models
 
 # Create your models here.
-class sales(models.Model):
+class Sales(models.Model):
     emailID=models.EmailField()
     date=models.DateField()
     billNo=models.CharField(max_length=10)
@@ -24,3 +24,6 @@ class sales(models.Model):
     balance=models.DecimalField(decimal_places=10,max_digits=14)
     duedate=models.DateField()
     mode=models.CharField(max_length=10)
+
+    def __unicode__(self):
+        return "%s" % (self.customer)
