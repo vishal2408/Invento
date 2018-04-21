@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^',include('sales.urls')),
     url(r'^',include('stocks.urls')),
     url(r'^',include('supplier.urls')),
+    url(r'^',include('purchase.urls'))
 ]

@@ -112,95 +112,18 @@
         <table>
            <thead>
             <tr>
-              <th>Id</th>
               <th>Stock Name</th>
               <th>Available Quantity</th>
 
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
+             {% for s in stocks_avail %}
+             <tr>
+              <td>{{ s.product }}</td>
+              <td>{{ s.avail }}</td>
              </tr>
-              <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-             </tr>
-              <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-             </tr>
-              <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-             </tr>
-              <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-             </tr>
-            <tr>
-              <td>Value 4</td>
-              <td>Value 5</td>
-              <td>Value 6</td>
-            
-          </tr>
-
-          <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-              	
-            </tr>
-
-            <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-                
-            </tr>
-
-            <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-                
-            </tr>
-
-            <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-                
-            </tr>
-
-            <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-                
-            </tr>
-
-            <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-                
-            </tr>
-
-            <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-                
-            </tr>
-            <tr>
-              
+             {% endfor %}
           </tbody>
         </table>
       </div>

@@ -23,4 +23,5 @@ def add_supplier_details(request):
 	return render(request, 'add_supplier_details.html',{})
 
 def view_suppliers_details(request):
-	return render(request, 'view_suppliers_details.html', {})
+	supplier = Supplier.objects.all()
+	return render(request, 'view_suppliers_details.html', {'supplier':supplier})

@@ -112,134 +112,31 @@
         <table>
            <thead>
             <tr>
-              <th>Id</th>
-              <th>Date</th>
               <th>Customer</th>
+              <th>BillNo</th>
+              <th>Date</th>
+              <th>Phone</th>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Rate</th>
               <th>Total</th>
-              <th>Edit</th>
-              <th>Delete</th>
+              <th>Balance</th>
             </tr>
           </thead>
           <tbody>
+            {% for s in sales %}
             <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
+              <td>{{ s.customer }}</td>
+              <td>{{ s.billNo }}</td>
+              <td>{{ s.date }}</td>
+              <td>{{ s.phone_number }}</td>
+              <td>{{ s.product }}</td>
+              <td>{{ s.rate }}</td>
+              <td>{{ s.quantity }}</td>
+              <td>{{ s.total }}</td>
+              <td>{{ s.balance }}</td>
             </tr>
-            <tr>
-              <td>Value 4</td>
-              <td>Value 5</td>
-              <td>Value 6</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              
-          </tr>
-
-          <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              	
-            </tr>
-            <tr>
-              
-              <td>Value 10</td>
-              <td>Value 11</td>
-              <td>Value 12</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-             
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-             
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              
-            </tr>
-
-
+            {% endfor %}
           </tbody>
         </table>
       </div>

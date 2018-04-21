@@ -21,4 +21,5 @@ def add_customer_details(request):
 	return render(request, 'add_customer_details.html', {})
 
 def view_customers_details(request):
-	return render(request, 'view_customers_details.html', {})
+	customer = Customer.objects.all()
+	return render(request, 'view_customers_details.html', {'customer':customer})

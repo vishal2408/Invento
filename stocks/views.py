@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from stocks.models import Stocks
+from sales.models import Sales
 
 
 def add_stock_details(request):
@@ -28,14 +29,10 @@ def add_stock_details(request):
 		customer.save()
 	return render(request, 'add_stock_details.html', {})
 
-def purchase_stock(request):
-	return render(request, 'purchase_stock.html', {})
-
-def view_purchase(request):
-	return render(request, 'view_purchase.html', {})
-
 def view_stock_availability(request):
-	return render(request, 'view_stock_availability.html', {})
+	stocks_avail = Sales.objects.all()
+	return render(request, 'view_stock_availibility.html', {'stocks_avail':stocks_avail})
 
 def view_stock_details(request):
-	return render(request, 'view_stock_details.html', {})
+	stocks = Stocks.objects.all()
+	return render(request, 'view_stock_details.html', {'stocks':stocks})

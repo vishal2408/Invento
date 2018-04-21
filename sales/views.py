@@ -46,4 +46,5 @@ def add_sales(request):
 	return render(request, 'add_sales.html', {})
 
 def view_sales(request):
-	return render(request, 'view_sales.html', {})
+	sales = Sales.objects.all()
+	return render(request, 'view_sales.html', {'sales': sales})

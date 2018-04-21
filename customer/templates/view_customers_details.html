@@ -121,44 +121,15 @@
             </tr>
           </thead>
           <tbody>
+            {% for c in customer %}
             <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
+              <td>{{ c.name }}</td>
+              <td>{{ c.address }}</td>
+              <td>{{ c.phone_number }}</td>
+              <td>Edit</td>
+              <td>Delete</td>
             </tr>
-            <tr>
-              <td>Value 4</td>
-              <td>Value 5</td>
-              <td>Value 6</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-          </tr>
-
-          <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-            </tr>
-            <tr>
-              
-              <td>Value 10</td>
-              <td>Value 11</td>
-              <td>Value 12</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-            </tr>
+            {% endfor %}
           </tbody>
         </table>
       </div>

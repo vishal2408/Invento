@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 {% load static %}
 <html>
 <head>
-<title>Inventory | View Purchase</title>
+<title>Inventory | Add | Stock Details</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="{%static 'css/layout.css' %}" rel="stylesheet">
@@ -98,151 +97,43 @@
         <!-- ################################################################################################ -->
       </header>
     </div>
-
+<!-- End Top Background Image Wrapper -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 
+<div class="wrapper row3">
+  <main class="container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
 
-<div class="panel-heading" align="center">
-    <h1 class="panel-title"> View Stock Payment</h1>
-    </div>
+      <div id="comments">
+        <h2>Add Stock Details</h2>
+        <form method="post" action="">
+            {% csrf_token %}
+<br><br>
+ID <input type="text" name="ID" value="" placeholder="Enter Id"/><br><br>
+Product Name <input type="text" name="product_name" value="" placeholder="Enter Product Name"/><br><br>
+Category <input type="text" name="category" value="" placeholder="Enter Category"/><br><br>
+Buying Rate <input type="text" name="buying_rate" value="" placeholder="Enter Buying Rate"/><br><br>
+Selling Rate <input type="text" name="selling_rate" value="" placeholder="Enter Selling Rate"/> <br><br>
+Supplier Name <input type="text" name="supplier_name" value="" placeholder="Enter Supplier Name"/><br><br>
+Expire Date <input type="Date" name="Date" value="" placeholder="Enter Expire Date"/><br><br>
 
-    <div class="scrollable">
-        <table>
-           <thead>
-            <tr>
-              <th>Stock Id</th>
-              <th>Category Name</th>
-              <th>Supplier</th>
-              <th>Date</th>
-              <th>Total</th>
-              <th>Payment</th>
-              <th>Edit</th>
-              <th>Delete</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-            </tr>
-            <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-            </tr>
-            <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-            </tr>
-            <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-            </tr>
-            <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-            </tr>
-            <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-            </tr>
-            <tr>
-              <td>Value 1</td>
-              <td>Value 2</td>
-              <td>Value 3</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-            </tr>
-            <tr>
-              <td>Value 4</td>
-              <td>Value 5</td>
-              <td>Value 6</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-          </tr>
+<center><input type="reset" value="Reset">
+  <input type="submit" value="Save"> </Center>
 
-          <tr>
-              <td>Value 7</td>
-              <td>Value 8</td>
-              <td>Value 9</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>	
-            </tr>
-            <tr>
-              
-              <td>Value 10</td>
-              <td>Value 11</td>
-              <td>Value 12</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-            </tr>
-            <tr>
-              
-              <td>Value 13</td>
-              <td>Value 14</td>
-              <td>Value 15</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-              <td>Value..</td>
-            </tr>
-
-
-          </tbody>
-        </table>
+</form>
       </div>
-
-
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->

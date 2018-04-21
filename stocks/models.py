@@ -11,7 +11,6 @@ class Stocks(models.Model):
     buying_rate=models.DecimalField(decimal_places=4,max_digits=10)
     selling_rate=models.DecimalField(decimal_places=4,max_digits=10)
     suppiler_name=models.CharField(max_length=20)
-    expiry_date=models.DateField
 
     def __unicode__(self):
         return "%s" % (self.product_name)
