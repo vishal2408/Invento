@@ -14,7 +14,8 @@ class LoginForm(forms.Form):
 			label = '',
 			widget = forms.TextInput(
 					attrs = {
-						'placeholder' : 'Enter password'
+						'placeholder' : 'Enter password',
+						'type':'password'
 					}
 				)
 	)
